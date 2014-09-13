@@ -1,0 +1,17 @@
+* {
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.test {
+	width: 1000px;
+	height: 1000px;
+	background-image: url('../images/cat2.jpg');
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.test {
+		background-image: url('../images/cat1.jpg');
+	}
+}
