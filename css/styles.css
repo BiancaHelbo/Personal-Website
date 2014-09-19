@@ -1,17 +1,74 @@
 * {
 	box-sizing:border-box;
     -moz-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
-.test {
-	width: 1000px;
-	height: 1000px;
-	background-image: url('../images/cat2.jpg');
+nav {
+	height: 2em;
+	/*CSS gradients*/
+	background-image: -ms-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: -moz-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: -o-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #535259), color-stop(1, #242424));
+	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
 }
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+nav ul li { 
+	display: inline; 
+}
+nav ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em;
+}
+footer {
+	/*CSS gradients*/	
+	background-image: -ms-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: -moz-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: -o-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #535259), color-stop(1, #242424));
+	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+	background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
+}
+header {
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	.test {
-		background-image: url('../images/cat1.jpg');
-	}
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
+}
+section {
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
 }
