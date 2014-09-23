@@ -34,41 +34,53 @@ footer {
 	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
 	background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
 }
+a {
+	color: black;
+}
 header {
-	/* IE10 Consumer Preview */ 
 	background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* Mozilla Firefox */ 
-	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* Opera */ 
+	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
 	background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* Webkit (Safari/Chrome 10) */ 
 	background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
-
-	/* Webkit (Chrome 11+) */ 
 	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* W3C Markup, IE10 Release Preview */ 
 	background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
 }
 section {
-	/* IE10 Consumer Preview */ 
 	background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* Mozilla Firefox */ 
-	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* Opera */ 
+	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
 	background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* Webkit (Safari/Chrome 10) */ 
 	background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
-
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-
-	/* W3C Markup, IE10 Release Preview */ 
+	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
 	background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
+}
+.clearfloat {
+	clear: both;
+}
+dl
+{
+	width: 520px;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #999;
+	background-color: red;
+}	
+dt
+{
+	clear: left;
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+	background-color: green;
+}	
+dd
+{
+	float: left;
+	width: 300px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	background-color: pink;
 }
