@@ -1,86 +1,155 @@
 * {
-	box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    margin: 0;
-    padding: 0;
-}
-nav {
-	height: 2em;
-	/*CSS gradients*/
-	background-image: -ms-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: -moz-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: -o-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #535259), color-stop(1, #242424));
-	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
-}
-nav ul {
-	list-style-type: none;
-	text-align: center;
-}
-nav ul li { 
-	display: inline; 
-}
-nav ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em;
-}
-footer {
-	/*CSS gradients*/	
-	background-image: -ms-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: -moz-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: -o-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #535259), color-stop(1, #242424));
-	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
-	background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
-}
-a {
-	color: black;
-}
-header {
-	background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
-	background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
-	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-	background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
-}
-section {
-	background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-	background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
-	background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
-	background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
-	background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
-}
-.clearfloat {
-	clear: both;
-}
-dl
-{
-	width: 520px;
-	margin: 1em 0;
-	padding: 0;
-	border-bottom: 1px solid #999;
-	background-color: red;
-}	
-dt
-{
-	clear: left;
-	float: left;
-	width: 200px;
-	margin: 0;
-	padding: 5px;
-	border-top: 1px solid #999;
-	font-weight: bold;
-	background-color: green;
-}	
-dd
-{
-	float: left;
-	width: 300px;
-	margin: 0;
-	padding: 5px;
-	border-top: 1px solid #999;
-	background-color: pink;
+		box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    margin: 0;
+	    padding: 0;
+	}
+	#logo {
+		width: 100%;
+		height: 6.250em;
+		background-color: #979797;
+		border-radius: 3em;
+		background-image: url('../images/logo.png');
+		background-position: 
+	}
+@media (min-width: 768px) {
+	header,section,footer {
+		margin: 0 auto;
+		width: 75em;
+	}
+	#logo {
+		float: left;
+		width: 6.250em;
+		height: 6.250em;
+		background-color: #979797;
+		border-radius: 3em;
+		background-image: url('../images/logo.png');
+		margin-right: -7.750em;
+		margin-left: 1.5em;
+		margin-top: 0.75em;
+	}
+	header {
+		height: 10em;
+	}
+	h1 {
+		height: 4em;
+		text-align: center;
+		line-height: 4em;
+	}
+	nav {
+		height: 2em;
+		/*CSS gradients*/
+		background-image: -ms-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: -moz-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: -o-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #535259), color-stop(1, #242424));
+		background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
+	}
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+	nav ul li { 
+		display: inline; 
+		font-weight: bold;
+		line-height: 2em;
+	}
+	nav ul li a { 
+		text-decoration: none; 
+		padding: .2em 1em;
+		color: #CECECE;
+	}
+	nav ul li a:hover {
+		color: white;
+	}
+	footer {
+		/*CSS gradients*/	
+		background-image: -ms-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: -moz-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: -o-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #535259), color-stop(1, #242424));
+		background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #535259 0%, #242424 100%);
+		background-image: radial-gradient(ellipse farthest-corner at center, #535259 0%, #242424 100%);
+	}
+	a {
+		color: black;
+	}
+	body {
+		/*CSS gradients*/
+		background-image: -ms-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+		background-image: -moz-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
+		background-image: -o-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%);
+		background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #065EA1), color-stop(1, #012642));
+		background-image: -webkit-radial-gradient(center, ellipse farthest-side, #065EA1 0%, #012642 100%); 
+		background-image: radial-gradient(ellipse farthest-side at center, #065EA1 0%, #012642 100%);
+	}
+	section {
+		padding: 1.5em;
+		overflow: auto;
+	}
+	header,section {
+		background-color: #CECECE;
+	}
+	dl
+	{
+		width: 100%;
+		margin: 1em 0;
+		padding: 0;
+		overflow: auto;
+	}	
+	dt
+	{
+		clear: left;
+		float: left;
+		width: 20%;
+		margin: 0;
+		padding: 0.5em;
+		font-weight: bold;
+	}	
+	dd
+	{
+		float: left;
+		width: 80%;
+		margin: 0;
+		padding: 0.5em;
+		border-left: 0.1em solid black;
+	}
+	dd h3 {
+		margin-top: 0.5em;
+	}
+	dd h3:first-child {
+		margin-top: 0;
+	}
+	.recipe {
+		font-weight: bold;
+		margin: 0.5em 0 0.5em 0;
+	}
+	#portrait {
+		border-radius: 1em;
+		float: left;
+		margin-right: 1em;
+	}
+	#ingredients {
+		margin: 0.5em 0 0.5em 0;
+	}
+	#recipe {
+		margin: 0.5em 0 0.5em 0;
+	}
+	#souffle {
+		float: right;
+		margin-right: 5em;
+	}
+	.lyrics {
+		text-align: center;
+	}
+	.songlyrics {
+		margin-top: 1em;
+	}
+	#title {
+		margin-bottom: 1em;
+	}
+	.aboutme {
+		margin-bottom: 1em;
+	}
 }
